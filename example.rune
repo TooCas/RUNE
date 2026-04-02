@@ -1,0 +1,15 @@
+{
+  "rune_payload": "<base64-encoded encrypted JSONL would go here>",
+  "rune_version": "4.1",
+  "format": "rune-v4.1-unified-base64",
+  "payload_bytes": 0,
+  "encoding": "base64",
+  "encryption": "sha256-xor-v1",
+  "contents": {
+    "line_1": "header",
+    "line_2": "identity_kernel",
+    "lines_3_plus": "memory_ledger",
+    "memory_entry_count": 0
+  },
+  "instructions": "To decrypt: base64-decode rune_payload, XOR with SHA-256 of passphrase as 32-byte cycling key, read first payload_bytes as UTF-8."
+}
